@@ -1,0 +1,14 @@
+package dao;
+import java.util.List;
+
+import model.Employee;
+
+
+public interface EmployeeDAO {
+	 void createEmployee(Employee employee);
+	  Employee getEmploeeById(int employeeId);
+	 void updateEmployeeEmailById(String newEmail,int employeeId);
+	void deleteEmployeeById(int employeeId);
+	List<Employee> getAllEmployeesInfo();
+
+}
